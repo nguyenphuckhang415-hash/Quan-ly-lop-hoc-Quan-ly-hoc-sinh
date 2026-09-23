@@ -1,0 +1,12 @@
+services:
+  quanlyhocsinh:
+    build: .
+    container_name: quanlyhocsinh-v18
+    restart: unless-stopped
+    ports:
+      - "6080:6080"
+    volumes:
+      - quanlyhocsinh_data:/data
+    shm_size: "1gb"
+volumes:
+  quanlyhocsinh_data:

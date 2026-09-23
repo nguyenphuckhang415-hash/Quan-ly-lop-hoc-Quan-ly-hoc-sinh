@@ -1,0 +1,7 @@
+# Đổi tenmiencuaban.vn thành tên miền thật.
+# Caddy sẽ tự xin HTTPS nếu DNS trỏ về VPS.
+# Có thể thêm basic_auth để bảo vệ lớp web/noVNC trước màn hình đăng nhập ứng dụng.
+
+tenmiencuaban.vn {
+    reverse_proxy 127.0.0.1:6080
+}
